@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <h1> This is my first page </h1>
+        <h2> ^That's a lie</h2>
+        <main>
+            <h3>Cat Photos</h3>
+            <!--To DO: Add link to cat photos-->
+            <p> Here are some <a href="https://www.pexels.com/search/cat/" target="_blank"> Cat Photos</a> as an apology</p>
+            
+            <a href="https://www.istockphoto.com/photos/dog-and-cat" target="_blank">
+                <img src="https://media.4-paws.org/a/5/3/7/a537f08d227326121b80790ba54036498668c9c8/VIER%20PFOTEN_2016-07-08_011-4993x3455-1920x1329.jpg" alt="It's photo of a cute cat, what else do you need?" height="480" width="540">
+                <br>
+                <div style="text-align: center;">
+                    <img src="dog.jpg" alt="Doggie" height="480" width="540">
+                </div>
+            </a>
+            <p>Things <strong>CAT</strong> love: </p>
+            <ul>
+                <li>Can of Tuna</li>
+                <li>Ball of wool</li>
+                <li>Meowing</li>
+                <a href="https://www.pexels.com/video/a-person-massaging-the-paws-of-a-kitten-5968893/" target="_blank">
+                    <video autoplay muted loop width="480" height="270">
+                        <source src="cat_meowing.mp4" type="video/mp4">
+                        Oops! I guess video didn't play.
+                    </video>
+                </a>
+                <form action="/submit-cat-photo" target="_blank">
+                    <!--Radio input for indoor or outdoor cat-->
+                    <input type="radio" name="in-out" id="indoor-cat">
+                    <label for="indoor-cat"> Indoor cat </label> <br>
+                    <input type="radio" name="in-out" id="outdoor-cat">
+                    <label for="outdoor-cat"> Outdoor cat </label> <br>
+
+                    <!--Add checkboxes for personality traits of pet-->
+                    <input type="checkbox" id="loving" name="personality">
+                    <label for="loving">Loving</label> <br>
+                    <input type="checkbox" id="grumpy" name="personality">
+                    <label for="grumpy">Grumpy</label> <br>
+                    <input type="checkbox" id="playful" name="personality">
+                    <label for="playful">Playful</label> <br>
+                    
+                    <input type="text" placeholder="give me your cat sauce" required> <br>
+                        <label>What's the color of your cat?</label>
+                        <input type="color">
+                        <button type="submit"><strong>Submit</strong></button>
+                </form>
+            </ul>
+            <p>Things <em>DOG</em> love: </p>
+            <ol>
+                <li>Barking</li>
+                <li>Chewing Bone</li>
+                <li>Walk</li>
+            </ol>
+
+        </main>
+    </body>
+</html>
